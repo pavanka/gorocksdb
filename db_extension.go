@@ -1,7 +1,19 @@
 package gorocksdb
 
 // #include <stdlib.h>
-// #include "extensions.h"
+// #include "rocksdb/c.h"
+// extern void get_iterators(
+//		rocksdb_readoptions_t* opts,
+//		rocksdb_t *db,
+//		rocksdb_column_family_handle_t** cfs,
+//		rocksdb_iterator_t** iters,
+//		int num,
+//		char** errptr);
+//
+// extern void create_checkpoint(
+//		rocksdb_t *db,
+//		const char* checkpoint_dir,
+//		char **errptr);
 import "C"
 
 import (
